@@ -88,11 +88,24 @@
 
 // echo $pi;
 
-$min = min(234,2435,3456524); // eng kichigini olib bERADI
-$max = max(234,2435,3456524); // eng kattasini olib bERADI
-$math = abs(-6.7); //musbatga aylantirad -6.7 ==== 6.7
-$ildiz - sqrt(9); //ildiz chiqaradi
-$butunOlish = round(1.5) // 0dan 5gacha 1ni oladi. 6dan 10gacha katasini oladi 1.3 === 1, 1.7 ===2 oladi
+// $min = min(234,2435,3456524); // eng kichigini olib bERADI
+// $max = max(234,2435,3456524); // eng kattasini olib bERADI
+// $math = abs(-6.7); //musbatga aylantirad -6.7 ==== 6.7
+// $ildiz - sqrt(9); //ildiz chiqaradi
+// $butunOlish = round(1.5) // 0dan 5gacha 1ni oladi. 6dan 10gacha katasini oladi 1.3 === 1, 1.7 ===2 oladi
+
+
+// ================================================================================
+
+
+// CONSTANTS
+
+define('Dastur', 'Php');
+// define('Dastur', 'Php/Yii2'); Bir xil o'zgaruvchi yozish mumkin emas.
+echo Dastur;
+
+// ======================================================
+
 
 
 ?>
@@ -110,12 +123,12 @@ $butunOlish = round(1.5) // 0dan 5gacha 1ni oladi. 6dan 10gacha katasini oladi 1
     </div>
 
     <div>
-        <?php
+        <!-- <?php
 echo $rang
-?>
+?> -->
     </div>
 
 
 </body>
 </html>
- -->
+ 
