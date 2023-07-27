@@ -58,7 +58,7 @@
 //     public function message(){
 //        return "my car is a " . $this->color . " " . $this->model;
 //     }
-   
+
 // }
 
 // $myCar = new Car('black', 'Mers');
@@ -100,11 +100,66 @@
 
 // CONSTANTS
 
-define('Dastur', 'Php');
+// define('Dastur', 'Php');
 // define('Dastur', 'Php/Yii2'); Bir xil o'zgaruvchi yozish mumkin emas.
-echo Dastur;
+// echo Dastur;
 
 // ======================================================
+
+// for, while, do while, foreach ====================
+
+
+// FOR
+
+//for ($x = 1; $x <= 5; $x++)
+//{
+//    echo $x . '<br>'
+//}
+
+//===============================================
+
+// WHILE
+ $x = 1;
+
+//while ($x <= 5) {
+//    echo $x . '<br>';
+//    $x++;
+//}
+
+
+ //=======================================
+//ARRAY FOREACH
+// $royxat = ['yashil', 'qizil', 'sariq'];
+
+// foreach ($royxat as $item){
+//     echo $item . '<br>';
+// }
+// =======================================
+
+//ARRAY ASSOTSIATIV
+
+// $agePerson = array('John'=>35, 'Ben'=>40, 'Stive'=>45);
+
+// foreach ($agePerson as $person=>$age){
+//     echo $person . ' - ' . $age . '<br>';
+// }
+
+
+// =========================================
+
+//DO WHILE
+
+
+// do {
+//     echo 'x teng' . $x;
+// } while ($x <= 5);
+
+
+
+//=========================================
+// BREAK CONTINUE
+
+
 
 
 
@@ -126,7 +181,7 @@ echo Dastur;
         <!-- <?php
 echo $rang
 ?> -->
-    </div>
+</div>
 
 
 </body>
