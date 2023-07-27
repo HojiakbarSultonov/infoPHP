@@ -160,15 +160,23 @@
 
 // FUNCTION=================================
 
-function wind($ism){
-    echo 'Ekranga chiqar ' . $ism . '<br>';
-}
+// function wind($ism){
+//     echo 'Ekranga chiqar ' . $ism . '<br>';
+// }
 
-wind('Hojiakbar');
-wind('Rasul');
+// wind('Hojiakbar');
+// wind('Rasul');
 
 
+//==============================================
 
+//VAR_DUMP()====================================
+
+$ozgaruvchi = '23232dfd';
+var_dump($ozgaruvchi); // ekranga chiqarish
+
+
+//===========================================
 
 ?>
 <!-- 
