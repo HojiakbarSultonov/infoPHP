@@ -39,14 +39,12 @@
 //object
 //null
 
-
 // $string = 'Salom Dunyo!'; // string datatype
 // $integer = 123123; // integer datatype
 // $float = 1.23; // float datatype
 // $boolean = true | false; // boolean datatype
 // $array = ['str', 12, true]; // array data types
 // $array2 = array('str', 12, true); //2-array data types arrayni ekranga chiqarish uchun echo bn printda chiqarip bolmaydi lekin print_r() bn chiqarish mumkin
-
 
 // class Car {   //object datatypes
 //     public $color;
@@ -64,9 +62,7 @@
 // $myCar = new Car('black', 'Mers');
 // echo $myCar -> message();   //object datatypes
 
-
 // $nu = null;
-
 
 // =======================================================
 
@@ -94,9 +90,7 @@
 // $ildiz - sqrt(9); //ildiz chiqaradi
 // $butunOlish = round(1.5) // 0dan 5gacha 1ni oladi. 6dan 10gacha katasini oladi 1.3 === 1, 1.7 ===2 oladi
 
-
 // ================================================================================
-
 
 // CONSTANTS
 
@@ -108,7 +102,6 @@
 
 // for, while, do while, foreach ====================
 
-
 // FOR
 
 //for ($x = 1; $x <= 5; $x++)
@@ -119,15 +112,14 @@
 //===============================================
 
 // WHILE
- $x = 1;
+$x = 1;
 
 //while ($x <= 5) {
 //    echo $x . '<br>';
 //    $x++;
 //}
 
-
- //=======================================
+//=======================================
 //ARRAY FOREACH
 // $royxat = ['yashil', 'qizil', 'sariq'];
 
@@ -144,17 +136,13 @@
 //     echo $person . ' - ' . $age . '<br>';
 // }
 
-
 // =========================================
 
 //DO WHILE
 
-
 // do {
 //     echo 'x teng' . $x;
 // } while ($x <= 5);
-
-
 
 //=========================================
 
@@ -167,7 +155,6 @@
 // wind('Hojiakbar');
 // wind('Rasul');
 
-
 //==============================================
 
 //VAR_DUMP()====================================
@@ -175,55 +162,64 @@
 $ozgaruvchi = '23232dfd';
 var_dump($ozgaruvchi); // ekranga chiqarish
 
-
 //===========================================
 
 //Array ========================================
 
-$royxat = ['32342', 'fwdsd', 'ght53'];   //array birinchi korinishi
+$royxat = ['32342', 'fwdsd', 'ght53']; //array birinchi korinishi
 $royxat2 = array('32342', 'fwdsd', 'ght53'); //array ikkiinchi korinishi
-
 
 //Array 3xil bo'ladi
 
 // indexed arrays ======             $ozgar = [23,234,54];
-                                    // $ozgar[0]
+// $ozgar[0]
 
 //Associative array =====            $arr = ['Hoji'=>27, 'Rasul'=>57];
-                                     // $arr['Hoji']
+// $arr['Hoji']
 
 // Multidimensional arrays ====      $massiv = [ ['chevrolet', 'cobolt'], ['nexia', 'gentra'], ['matiz', 'damas'],]
-                                     //  echo $massiv[0]['chevrolet'];
+//  echo $massiv[0]['chevrolet'];
 
 // foreach($arrays as $arr){
 //     echo $arr;
 // }
 
-
-
 //============================================
 
+// SUPER GLOBALS =============================
+
+// var_dump($_SERVER);
+// var_dump($_GET);
+// var_dump($_REQUEST);
+// var_dump($_REQUEST);
+// var_dump($_POST);
+
+// =====================================================
+
+$car = 'Malibu';
+
+$foods = ['Norin', 'Honim', 'Manti'];
+
 ?>
-<!-- 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mening php filem</title>
+    <title>Document</title>
 </head>
 <body>
-    <div>
-        salom
-    </div>
-
-    <div>
-        <!-- <?php
-echo $rang
-?> -->
-</div>
-
-
+    <h1>Salom</h1>
+    <p>Mening yoqtirgan mashinam bu <?= $car ?></p>
+    <h3>Taomlar</h3>
+    <ul>
+        <? foreach($foods as $food):?>
+        <li><?=$food ?></li>
+        <?endforeach?>
+       
+    </ul>
 </body>
 </html>
- 
+
