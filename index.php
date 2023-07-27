@@ -178,6 +178,31 @@ var_dump($ozgaruvchi); // ekranga chiqarish
 
 //===========================================
 
+//Array ========================================
+
+$royxat = ['32342', 'fwdsd', 'ght53'];   //array birinchi korinishi
+$royxat2 = array('32342', 'fwdsd', 'ght53'); //array ikkiinchi korinishi
+
+
+//Array 3xil bo'ladi
+
+// indexed arrays ======             $ozgar = [23,234,54];
+                                    // $ozgar[0]
+
+//Associative array =====            $arr = ['Hoji'=>27, 'Rasul'=>57];
+                                     // $arr['Hoji']
+
+// Multidimensional arrays ====      $massiv = [ ['chevrolet', 'cobolt'], ['nexia', 'gentra'], ['matiz', 'damas'],]
+                                     //  echo $massiv[0]['chevrolet'];
+
+// foreach($arrays as $arr){
+//     echo $arr;
+// }
+
+
+
+//============================================
+
 ?>
 <!-- 
 <!DOCTYPE html>
