@@ -157,8 +157,15 @@
 
 
 //=========================================
-// BREAK CONTINUE
 
+// FUNCTION=================================
+
+function wind($ism){
+    echo 'Ekranga chiqar ' . $ism . '<br>';
+}
+
+wind('Hojiakbar');
+wind('Rasul');
 
 
 
