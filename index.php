@@ -159,15 +159,15 @@ $x = 1;
 
 //VAR_DUMP()====================================
 
-$ozgaruvchi = '23232dfd';
-var_dump($ozgaruvchi); // ekranga chiqarish
+// $ozgaruvchi = '23232dfd';
+// var_dump($ozgaruvchi); // ekranga chiqarish
 
 //===========================================
 
 //Array ========================================
 
-$royxat = ['32342', 'fwdsd', 'ght53']; //array birinchi korinishi
-$royxat2 = array('32342', 'fwdsd', 'ght53'); //array ikkiinchi korinishi
+// $royxat = ['32342', 'fwdsd', 'ght53']; //array birinchi korinishi
+// $royxat2 = array('32342', 'fwdsd', 'ght53'); //array ikkiinchi korinishi
 
 //Array 3xil bo'ladi
 
@@ -196,9 +196,14 @@ $royxat2 = array('32342', 'fwdsd', 'ght53'); //array ikkiinchi korinishi
 
 // =====================================================
 
-$car = 'Malibu';
+// $car = 'Malibu';
 
-$foods = ['Norin', 'Honim', 'Manti'];
+// $foods = ['Norin', 'Honim', 'Manti'];
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $name = $_POST['name'];
+    $surName = $_POST['surName'];
+}
 
 ?>
 
@@ -211,15 +216,40 @@ $foods = ['Norin', 'Honim', 'Manti'];
     <title>Document</title>
 </head>
 <body>
-    <h1>Salom</h1>
-    <p>Mening yoqtirgan mashinam bu <?= $car ?></p>
+
+// =========================================
+    <!-- <h1>Salom</h1>
+    <p>Mening yoqtirgan mashinam bu <?=$car?></p>
     <h3>Taomlar</h3>
     <ul>
-        <? foreach($foods as $food):?>
-        <li><?=$food ?></li>
+        <?foreach ($foods as $food): ?>
+        <li><?=$food?></li>
         <?endforeach?>
-       
-    </ul>
+
+    </ul> -->
+
+    //==============================
+
+    <form method="POST" action="">
+        <h4>To'ldiring</h4>
+    <div>
+    <label for="">Ismingiz</label>
+        <input type="text" name="name">
+    </div>
+
+       <div>
+       <label for="">Familiyangiz</label>
+        <input type="text" name="surName">
+       </div>
+       <div>
+        <button type="submit">Jonatish</button>
+       </div>
+    </form>
+
+    <div>
+        <h1>Name: <?=$name ?? ''?></h1>
+        <h1>SurName: <?=$surName ?? ''?></h1>
+    </div>
 </body>
 </html>
 
